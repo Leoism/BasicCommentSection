@@ -1,0 +1,29 @@
+<table>
+  <ng-container *ngFor="let comment of comments;">
+    <thead>
+      <tr>
+        <th colspan="1" align="left">{{comment.name}}</th>
+        <th colspan="1" align="right">{{comment.date}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">{{comment.text}}</td>
+      </tr>
+    </tbody>
+  </ng-container>
+</table>
+<form (ngSubmit)="onSubmit()">
+  <div class="">
+    Name:
+    <input class="name validate" name="Name" [(ngModel)]="newComment.name" required>
+    <br>
+    Email:
+    <input id="email" type="email" class="email validate" name="Email" [(ngModel)]="newComment.email" required>
+  </div>
+  <br>
+  Comment:
+  <br>
+  <textarea class="body" name="Comment" [(ngModel)]="newComment.text" required></textarea>
+  <button type="submit">Reply</button>
+</form>

@@ -1,0 +1,26 @@
+table {
+  min-width: 360px;
+  max-width: 500px;
+}
+
+.name {
+  width: 75%;
+  display: inline-block;
+  min-width: 180px;
+  max-width: 248px;
+}
+
+.email {
+  width: 75%;
+  display: inline-block;
+  min-width: 180px;
+  max-width: 248px;
+}
+
+.body {
+  width: 75%;
+  display: block;
+  min-height: 256px;
+  min-width: 360px;
+  max-width: 500px;
+}
